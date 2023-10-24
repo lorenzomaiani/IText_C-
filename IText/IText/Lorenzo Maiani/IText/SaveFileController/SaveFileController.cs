@@ -26,7 +26,7 @@ namespace IText.Lorenzo_Maiani.IText.SaveFileController
                 }
                 else
                 {
-                    var fs = System.IO.File.Create(this.fileModel.GetFilePath()+this.fileModel.GetFileName());
+                    var fs = System.IO.File.Create(this.fileModel.GetFilePath());
                     Console.WriteLine("Creazione del file avvenuta con successo");
                     return fs != null ? true : false;
 
@@ -45,7 +45,7 @@ namespace IText.Lorenzo_Maiani.IText.SaveFileController
 
         public Boolean IsAlreadyExist()
         {
-            return System.IO.File.Exists(this.fileModel.GetFilePath()+this.fileModel.GetFileName());
+            return System.IO.File.Exists(this.fileModel.GetFilePath());
         }
 
         public void SaveOnFile(String mess)
@@ -59,7 +59,7 @@ namespace IText.Lorenzo_Maiani.IText.SaveFileController
         {
             try
             {
-                StreamWriter strW = new StreamWriter(new FileStream(this.fileModel.GetFilePath()+this.fileModel.GetFileName(), FileMode.Append));
+                StreamWriter strW = new StreamWriter(new FileStream(this.fileModel.GetFilePath(), FileMode.Append));
                 strW.WriteLine(mess);
                 strW.Close();
             }
