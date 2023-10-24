@@ -1,6 +1,7 @@
 ﻿using IText.Lorenzo_Maiani.IText.File;
 using IText.Lorenzo_Maiani.IText.SaveFileController;
 using System;
+using System.IO;
 
 namespace IText.Lorenzo_Maiani.Test
 {
@@ -8,34 +9,38 @@ namespace IText.Lorenzo_Maiani.Test
     {
         public static void Main(string[] args)
         {
-            OpenFileDialog dialog = new OpenFileDialog();
-
-
+            Test t = new Test();
+            //t.TestCreate();
+            t.TestWrite();
         }
 
-        private void Test1()
+        private void TestCreate()
         {
-            Console.WriteLine("Inserire il path del file");
+            Console.WriteLine("Inserire path del File.txt da creare");
             string path = Console.ReadLine();
-            Console.WriteLine("Inserire il nome del file");
-            string name = Console.ReadLine();
+            string name = "File.txt";
 
             FileModel file = new FileModel(path,name);
-
             SaveFileController saveFileController = new SaveFileController(file.GetFilePath(), file.GetFileName());
             saveFileController.CreateAFile();
-            string text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, " + "\n "+
-                "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut " + "\n " +
-                "enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut " + "\n " +
-                "aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in " + "\n " +
-                "voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint" + "\n " +
-                " occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit" + "\n " +
-                " anim id est laborum.";
+        }  
 
-            saveFileController.SaveOnFile(text);
-
+        private void TestWrite()
+        {
+            Console.WriteLine("Inserire path del File.txt su cui scrivere");
+            string path = Console.ReadLine();
+            string name = "File.txt";
+            FileModel file = new FileModel(path, name);
+            SaveFileController saveFileController = new SaveFileController(file.GetFilePath(), file.GetFileName());
+            string mess = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+            if(saveFileController.IsAlreadyExist())
+            {
+                saveFileController.SaveOnFile(mess);
+            }
+            else
+            {
+                Console.WriteLine("Il file non esiste, occorre prima crealro");
+            }
         }
-
-        
     }
 }

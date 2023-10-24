@@ -15,7 +15,7 @@ namespace IText.Lorenzo_Maiani.IText.OpenFileController
 
         public Boolean IsAFile()
         {
-            return System.IO.File.Exists(this.fileToOpen.GetFilePath());
+            return System.IO.File.Exists(this.fileToOpen.GetFilePath()+this.fileToOpen.GetFileName());
         }
 
         public string ReadFromFile()
@@ -29,7 +29,7 @@ namespace IText.Lorenzo_Maiani.IText.OpenFileController
             try
             {
                 string line = "";
-                StreamReader reader = new StreamReader(this.fileToOpen.GetFilePath());
+                StreamReader reader = new StreamReader(this.fileToOpen.GetFilePath() + this.fileToOpen.GetFileName());
                 while((line = reader.ReadLine()) != null)
                 {
                     text += line;
@@ -38,7 +38,7 @@ namespace IText.Lorenzo_Maiani.IText.OpenFileController
             } 
             catch (IOException e)
             {
-                Console.WriteLine("Errore - impossibili leggere dal file: " + this.fileToOpen.GetFileName());
+                Console.WriteLine("Errore - impossibili leggere dal file: " + this.fileToOpen.GetFileName() + this.fileToOpen.GetFileName());
                 return null;
             }
         }
