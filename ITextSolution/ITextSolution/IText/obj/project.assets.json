@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\RiderProjects\\ITextSolution\\ITextSolution\\IText\\IText.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\OOP22-itxt-CSharp\\ITextSolution\\ITextSolution\\IText\\IText.csproj",
       "projectName": "IText",
-      "projectPath": "C:\\Users\\User\\RiderProjects\\ITextSolution\\ITextSolution\\IText\\IText.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\OOP22-itxt-CSharp\\ITextSolution\\ITextSolution\\IText\\IText.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\RiderProjects\\ITextSolution\\ITextSolution\\IText\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\OOP22-itxt-CSharp\\ITextSolution\\ITextSolution\\IText\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
