@@ -2,6 +2,6 @@ namespace IText.Interface
 {
     public interface ISaver
     {
-        void SaveSettingInfo();
+        void SaveSettingInfo(string fileName, string directoryPath);
     }
 }
