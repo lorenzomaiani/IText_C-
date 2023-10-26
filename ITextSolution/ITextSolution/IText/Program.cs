@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using IText.Implementation;
 
 namespace IText
@@ -10,6 +11,7 @@ namespace IText
             Program p = new Program();
             //p.TestCreate();
             //p.TestWrite();
+            p.test2();
         }
 
         public void TestCreate()
@@ -49,6 +51,11 @@ namespace IText
             Console.WriteLine("Info:");
             Console.WriteLine("Nome file: " + name);
             Console.WriteLine("Path del file: " + path);
+        }
+
+        public void test2()
+        {
+            Console.WriteLine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + Path.DirectorySeparatorChar);
         }
     }
 }

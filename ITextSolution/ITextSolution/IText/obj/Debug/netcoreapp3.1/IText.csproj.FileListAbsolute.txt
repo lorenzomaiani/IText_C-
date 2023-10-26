@@ -11,3 +11,16 @@ C:\Users\User\RiderProjects\ITextSolution\ITextSolution\IText\obj\Debug\netcorea
 C:\Users\User\RiderProjects\ITextSolution\ITextSolution\IText\obj\Debug\netcoreapp3.1\IText.dll
 C:\Users\User\RiderProjects\ITextSolution\ITextSolution\IText\obj\Debug\netcoreapp3.1\IText.pdb
 C:\Users\User\RiderProjects\ITextSolution\ITextSolution\IText\obj\Debug\netcoreapp3.1\IText.genruntimeconfig.cache
+C:\Users\User\Desktop\OOP22-itxt-CSharp\ITextSolution\ITextSolution\IText\bin\Debug\netcoreapp3.1\IText.exe
+C:\Users\User\Desktop\OOP22-itxt-CSharp\ITextSolution\ITextSolution\IText\bin\Debug\netcoreapp3.1\IText.deps.json
+C:\Users\User\Desktop\OOP22-itxt-CSharp\ITextSolution\ITextSolution\IText\bin\Debug\netcoreapp3.1\IText.runtimeconfig.json
+C:\Users\User\Desktop\OOP22-itxt-CSharp\ITextSolution\ITextSolution\IText\bin\Debug\netcoreapp3.1\IText.runtimeconfig.dev.json
+C:\Users\User\Desktop\OOP22-itxt-CSharp\ITextSolution\ITextSolution\IText\bin\Debug\netcoreapp3.1\IText.dll
+C:\Users\User\Desktop\OOP22-itxt-CSharp\ITextSolution\ITextSolution\IText\bin\Debug\netcoreapp3.1\IText.pdb
+C:\Users\User\Desktop\OOP22-itxt-CSharp\ITextSolution\ITextSolution\IText\obj\Debug\netcoreapp3.1\IText.csprojAssemblyReference.cache
+C:\Users\User\Desktop\OOP22-itxt-CSharp\ITextSolution\ITextSolution\IText\obj\Debug\netcoreapp3.1\IText.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\OOP22-itxt-CSharp\ITextSolution\ITextSolution\IText\obj\Debug\netcoreapp3.1\IText.AssemblyInfo.cs
+C:\Users\User\Desktop\OOP22-itxt-CSharp\ITextSolution\ITextSolution\IText\obj\Debug\netcoreapp3.1\IText.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\OOP22-itxt-CSharp\ITextSolution\ITextSolution\IText\obj\Debug\netcoreapp3.1\IText.dll
+C:\Users\User\Desktop\OOP22-itxt-CSharp\ITextSolution\ITextSolution\IText\obj\Debug\netcoreapp3.1\IText.pdb
+C:\Users\User\Desktop\OOP22-itxt-CSharp\ITextSolution\ITextSolution\IText\obj\Debug\netcoreapp3.1\IText.genruntimeconfig.cache

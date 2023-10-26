@@ -12,4 +12,12 @@
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\IText\IText.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\IText\IText.csproj" />
+    </ItemGroup>
+
 </Project>
