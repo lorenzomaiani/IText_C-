@@ -56,6 +56,18 @@ namespace Test
                 Assert.Equals(mess, openFileController.ReadFromFile());
             }
         }
+
+        [Test]
+        public void UseSettingAsSingleton()
+        {
+            Setting setting = Setting.GetInstance();
+            Setting anotherSetting = Setting.GetInstance();
+            Assert.AreEqual(anotherSetting.GetMainDirectory(), setting.GetMainDirectory());
+            Assert.AreEqual(anotherSetting.GetFont(), setting.GetFont());
+            anotherSetting.SetTheme(Theme.DARK);
+            // are still equals because setting is a singleton, one instance for all the object
+            Assert.AreEqual(anotherSetting.GetTheme(), setting.GetTheme());
+        }
         
         
     }
