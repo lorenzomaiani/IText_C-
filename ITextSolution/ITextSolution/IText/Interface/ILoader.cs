@@ -2,6 +2,6 @@ namespace IText.Interface
 {
     public interface ILoader
     {
-        void LoadSettingInfo();
+        void LoadSettingInfo(string directoryPath, string fileName);
     }
 }
