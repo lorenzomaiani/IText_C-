@@ -68,6 +68,19 @@ namespace Test
             // are still equals because setting is a singleton, one instance for all the object
             Assert.AreEqual(anotherSetting.GetTheme(), setting.GetTheme());
         }
+
+        [Test]
+        public void WriteSettingInfo()
+        {
+            Setting setting = Setting.GetInstance();
+            setting.SetMainDirectory(home + sep + "Documents");
+            setting.SetTheme(Theme.LIGHT);
+            setting.SetFont("Arial");
+            Info info = new Info();
+            info.Setting = setting;
+            Saver saver = new Saver(info);
+            saver.SaveSettingInfo("Setting.txt", home + sep + "Documents" + sep + "Setting");
+        }
         
         
     }
