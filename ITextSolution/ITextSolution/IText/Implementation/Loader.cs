@@ -47,7 +47,9 @@ namespace IText.Implementation
                 {
                     text += line + '\n';
                 }
+                reader.Close();
                 return text;
+                
             } 
             catch (IOException e)
             {
