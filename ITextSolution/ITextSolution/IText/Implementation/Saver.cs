@@ -23,9 +23,9 @@ namespace IText.Implementation
             {
                 Directory.CreateDirectory(directoryPath);
                 fs = File.Create(filePath);
-                
+                WriteSettingInfo(fs);
             }
-            WriteSettingInfo(fs);
+            
             
         }
 
